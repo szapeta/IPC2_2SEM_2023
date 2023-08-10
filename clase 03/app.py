@@ -1,4 +1,4 @@
-from nodo import Nodo # <--- Importamos la clase Nodo del archivo nodo.py
+from nodo import NodoBase # <--- Importamos la clase Nodo del archivo nodo.py
 
 # el comentario de una linea inicia con el simbolo de #
 """
@@ -62,7 +62,8 @@ if numero != numero2 or numero == 10:
 
 #Operadores de asignacion
 # = += -= *= /= %= **= //=
-numero += 1
+numero += 1 # numero = numero + 1
+
 print(numero)
 
 numero -= 1
@@ -99,6 +100,7 @@ while numero < 10:
     numero += 1
 
 #uso de la clase nodo
-objetoNodo = Nodo()
-print(objetoNodo.getIndice()) #imprime 0
+objetoNodo = NodoBase()
+objetoNodo.setIndice(1000)
+print(objetoNodo.getIndice()) #imprime 1000
 
